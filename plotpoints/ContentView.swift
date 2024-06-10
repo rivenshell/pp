@@ -22,9 +22,9 @@ struct ContentView: View {
 //        }
         TabView{
             Text("Home")
-                .tabItem{ Image(systemName: "paper")}
+                .tabItem{ Image(systemName: "house")}
             Text("Seatch")
-                .tabItem { Image }
+                .tabItem { Image(systemName: "arrow.right") }
         }
     }
 }
