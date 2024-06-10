@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B17AF4F2C167B30009F032E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17AF4E2C167B30009F032E /* SignInView.swift */; };
+		5B17AF512C167B3E009F032E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17AF502C167B3E009F032E /* SignUpView.swift */; };
 		5B41C0E52C13FE79001996BF /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5B41C0E42C13FE79001996BF /* Documentation.docc */; };
 		5B41C0E82C13FF04001996BF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B41C0E72C13FF04001996BF /* Launch Screen.storyboard */; };
 		5BC795812C0E45F6000A8C17 /* plotpointsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC795802C0E45F6000A8C17 /* plotpointsApp.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B17AF4E2C167B30009F032E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		5B17AF502C167B3E009F032E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5B41C0E42C13FE79001996BF /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		5B41C0E72C13FF04001996BF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5BC7957D2C0E45F6000A8C17 /* plotpoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plotpoints.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,11 +83,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B41C0E62C13FE95001996BF /* pages */ = {
+		5B17AF4C2C167AD8009F032E /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				5B17AF4E2C167B30009F032E /* SignInView.swift */,
+				5B17AF502C167B3E009F032E /* SignUpView.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		5B17AF4D2C167AFE009F032E /* main */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = pages;
+			path = main;
+			sourceTree = "<group>";
+		};
+		5B41C0E62C13FE95001996BF /* app */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 		5BC795742C0E45F6000A8C17 = {
@@ -109,7 +129,9 @@
 		5BC7957F2C0E45F6000A8C17 /* plotpoints */ = {
 			isa = PBXGroup;
 			children = (
-				5B41C0E62C13FE95001996BF /* pages */,
+				5B41C0E62C13FE95001996BF /* app */,
+				5B17AF4C2C167AD8009F032E /* auth */,
+				5B17AF4D2C167AFE009F032E /* main */,
 				5BC795802C0E45F6000A8C17 /* plotpointsApp.swift */,
 				5BC795822C0E45F6000A8C17 /* ContentView.swift */,
 				5BC795842C0E45F6000A8C17 /* Item.swift */,
@@ -278,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B17AF4F2C167B30009F032E /* SignInView.swift in Sources */,
 				5BC795832C0E45F6000A8C17 /* ContentView.swift in Sources */,
 				5BC795852C0E45F6000A8C17 /* Item.swift in Sources */,
+				5B17AF512C167B3E009F032E /* SignUpView.swift in Sources */,
 				5BC795812C0E45F6000A8C17 /* plotpointsApp.swift in Sources */,
 				5B41C0E52C13FE79001996BF /* Documentation.docc in Sources */,
 				5BC795AD2C0E653B000A8C17 /* data.swift in Sources */,
