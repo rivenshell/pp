@@ -23,8 +23,14 @@ struct ContentView: View {
         TabView{
             Text("Home")
                 .tabItem{ Image(systemName: "house")}
-            Text("Seatch")
+            Text("Surfer Brah")
+                .tabItem { Image(systemName: "surfboard")
+                    DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { /*@START_MENU_TOKEN@*/Text("Date")/*@END_MENU_TOKEN@*/ })
+                }
+            
+            Text("Go")
                 .tabItem { Image(systemName: "arrow.right") }
+
         }
     }
 }
